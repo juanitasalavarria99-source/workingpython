@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Agregar Estudiante</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>➕ Agregar Nuevo Estudiante</h2>
+        <p style="text-align:center; color:#ccc; margin-bottom:30px; font-size:1.2em;">
+            Complete el siguiente formulario para agregar un nuevo estudiante al sistema.
+        </p>
+
+        <form method="POST">
+            <input type="text" name="nombre" placeholder="Nombre completo" required>
+            <input type="number" name="edad" placeholder="Edad" required>
+            <input type="text" name="curso" placeholder="Curso">
+            <input type="text" name="carrera" placeholder="Carrera">
+            <input type="text" name="facultad" placeholder="Facultad">
+            <button type="submit">💾 Guardar Estudiante</button>
+        </form>
+
+        <a href="{{ url_for('index') }}" class="back-link">⬅️ Volver a la lista de estudiantes</a>
+    </div>
+</body>
+</html>

@@ -1,8 +1,7 @@
-#conexion
 import socket
 import threading
 
-HOST = '127.0.0.1'
+HOST = '0.0.0.0'
 PORT = 5000
 
 def handle_client(conn, addr):
@@ -67,3 +66,4 @@ def start_server():
 
 if __name__ == "__main__":
     start_server()
+
